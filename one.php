@@ -15,11 +15,11 @@
     {
         if ($num1<15)
         {
-        echo $num1."is".M5."\n";
+        echo $num1."is".M5."\n"."<br>";
     }
     elseif ($num1 % 2 !=0)
     {
-        echo $num1."is".MOTM5."\n";
+        echo $num1."is".MOTM5."\n"."<br>";
     }
     $num1++;
     }
