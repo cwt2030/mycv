@@ -5,6 +5,18 @@
         <link href="css.css" rel="stylesheet" >
     </head>
     <body>
+        
+        <?php
+	  $servername ="localhost:3306";
+      $username ="cwt";
+	  $password ="cwtT@2030";
+	  $dbname = "admin_cwt";
+	  //الاتصال بقاعدة البيانات 
+      $conn = new mysqli($servername, $username, $password, $dbname);
+      $col =$_POST["name1"];
+      $Rest =$_POST["color"];
+
+      ?>
 
         <div class="div1">
             <b>
@@ -25,6 +37,12 @@
 			<input type="submit">
                 </form>
             </div>
+
+            <?php
+    $sql ="INSERT INTO userdata (Name, Color) VALUES ('$col' ,'$Rest')";
+    mysqli_query($conn,$sql);
+
+            ?>
 		<footer>
 		goodbye
 		</footer>
