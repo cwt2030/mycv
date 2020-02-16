@@ -25,7 +25,7 @@
 			<br><br><br><br>
         </div>
         <div class="form">
-		<form action="test.php" method="post">
+		<form action="forms.php" method="post">
 			Name:<input type="text" name="name1">
 			<br><br><br>
 			color:
@@ -43,6 +43,22 @@
     mysqli_query($conn,$sql);
 
             ?>
+    <?php
+
+        $stmt = $conn->prepare("select * from userdata");
+        $stmt->execute();
+        $result =$stmt->get_result();
+
+        echo "<table style=border: 3px solid #73AD21;>";
+        while($row = $result ->fetch_assoc()){
+            
+        echo "<tr><td>".$row['Name']."</td><td>".$row['Color']."</td></tr>";
+
+        }
+        echo  "</table>"
+
+     ?>
+
 		<footer>
 		goodbye
 		</footer>
