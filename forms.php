@@ -49,7 +49,7 @@
         $stmt->execute();
         $result =$stmt->get_result();
 
-        echo "<table  id=table";
+        echo "<table id=table";
         while($row = $result ->fetch_assoc()){
             
         echo "<tr><td>".$row['Name']."</td><td>".$row['Color']."</td></tr>";
