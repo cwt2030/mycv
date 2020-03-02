@@ -8,13 +8,13 @@
         
         <?php
 	  $servername ="localhost:3306";
-      $username ="cwt";
-	  $password ="cwtT@2030";
-	  $dbname = "admin_cwt";
+      $username ="ippdf";
+	  $password ="oraX@2030";
+	  $dbname = "admin_ippdf";
 	  //الاتصال بقاعدة البيانات 
       $conn = new mysqli($servername, $username, $password, $dbname);
       $col =$_POST["name1"];
-      $Rest =$_POST["color"];
+      $Rest =$_POST["Phone"];
 
       ?>
 
@@ -29,17 +29,14 @@
 			Name:<input type="text" name="name1">
 			<br><br><br>
 			color:
-			<select name="color">
-				<option value="red">RED</option>
-                <option value="blue">BLOE</option>
-				</select>
-			<br><br><br><br>
+            Phone:<input type="text" name="Phone">
+ 			<br><br><br><br>
 			<input type="submit">
                 </form>
             </div>
 
             <?php
-    $sql ="INSERT INTO userdata (Name, Color) VALUES ('$col' ,'$Rest')";
+    $sql ="INSERT INTO userdata (Name, Phone) VALUES ('$col' ,'$Rest')";
     mysqli_query($conn,$sql);
 
             ?>
