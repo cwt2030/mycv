@@ -26,18 +26,16 @@
         </div>
         <div class="form">
 		<form action="forms.php" method="post">
-			Name:<input type="text" name="name1">
+			Name:<input type="text" name="name1"required>
 			<br><br><br>
 			 
-            Phone:<input type="text" name="Phone" require>
+            Phone:<input type="text" name="Phone" required>
              <br><br><br><br>
-             PASSWORD:<input type="password" name="Phone"require>
+             Password:<input type="password" name="Phone"required>
              <br><br><br><br>
-             <input type="text" placeholder="MM/DD/YYYY">
- 			<br><br><br><br>
+ 
 
-
-			<input type="submit">
+			<input type="submit" >
                 </form>
             </div>
 
