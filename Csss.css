@@ -21,19 +21,19 @@ body{
     text-align: center;
     position: initial;
 }
-#table {
+table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
   }
   
-#table td, th {
+table td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
   }
   
-#table tr:nth-child(even) {
+table tr:nth-child(even) {
     background-color: #ddd;
   }
   
