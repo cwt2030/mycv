@@ -15,6 +15,7 @@
       $conn = new mysqli($servername, $username, $password, $dbname);
       $col =$_POST["name1"];
       $Rest =$_POST["Phone"];
+      $Pass =$_POST["Password"]
 
       ?>
 
@@ -40,7 +41,7 @@
             </div>
 
             <?php
-    $sql ="INSERT INTO userdata (Name, Phone) VALUES ('$col' ,'$Rest')";
+    $sql ="INSERT INTO userdata (Name, Phone, Pass ) VALUES ('$col' ,'$Rest' ,'$Pass')";
     mysqli_query($conn,$sql);
 
             ?>
