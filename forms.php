@@ -31,7 +31,7 @@
 			 
             Phone:<input type="text" name="Phone" required>
              <br><br><br><br>
-             Password:<input type="password" name="Phone"required>
+             Password:<input type="password" name="Password"required>
              <br><br><br><br>
  
 
