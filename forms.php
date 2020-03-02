@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html >
     <head>
-        <link href="css.css" rel="stylesheet" >
+        <link href="Csss.css" rel="stylesheet" >
     </head>
     <body>
         
@@ -28,7 +28,7 @@
 		<form action="forms.php" method="post">
 			Name:<input type="text" name="name1">
 			<br><br><br>
-			color:
+			 
             Phone:<input type="text" name="Phone">
  			<br><br><br><br>
 			<input type="submit">
@@ -49,7 +49,7 @@
         echo "<table id=table";
         while($row = $result ->fetch_assoc()){
             
-        echo "<tr><td>".$row['Name']."</td><td>".$row['Color']."</td></tr>";
+        echo "<tr><td>".$row['Name']."</td><td>".$row['Phone']."</td></tr>";
 
         }
         echo  "</table>"
