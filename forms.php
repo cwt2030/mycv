@@ -29,8 +29,14 @@
 			Name:<input type="text" name="name1">
 			<br><br><br>
 			 
-            Phone:<input type="text" name="Phone">
+            Phone:<input type="text" name="Phone" require>
+             <br><br><br><br>
+             PASSWORD:<input type="password" name="Phone"require>
+             <br><br><br><br>
+             <input type="text" placeholder="MM/DD/YYYY">
  			<br><br><br><br>
+
+
 			<input type="submit">
                 </form>
             </div>
@@ -49,7 +55,7 @@
         echo "<table ";
         while($row = $result ->fetch_assoc()){
             
-        echo "<tr><td>".$row['Name']."</td><td>".$row['Phone']."</td></tr>";
+        echo "<tr><td>".$row['Name']."</td><td>".$row['Phone']."</td><td>".$row['date']."</td></tr>";
 
         }
         echo  "</table>"
@@ -57,8 +63,8 @@
      ?>
 
 		<footer>
-		goodbye
-		</footer>
+        End !
+    </footer>
 
     </body>
 </html>
